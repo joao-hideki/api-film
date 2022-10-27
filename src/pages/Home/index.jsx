@@ -28,6 +28,7 @@ const Home = () => {
     return(
         <Container>
             <p>Melhores Filmes:</p>
+           
             <Grid>
                 {loading &&
                     <LoadingEffect/>
@@ -40,6 +41,7 @@ const Home = () => {
                         })           
                 }
             </Grid>
+        
         </Container>
     );
 }

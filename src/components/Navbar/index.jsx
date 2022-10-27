@@ -18,7 +18,7 @@ export const Navbar = () => {
 
     return(
         <Container>
-            <h2><Link to='/'><BiCameraMovie id='logo'/>Movies Lib</Link></h2>
+            <h2><Link to='/'><BiCameraMovie id='logo'/><span>MovieLab</span></Link></h2>
             <form onSubmit={handleSubmit}>
                 <input 
                     type='text' 

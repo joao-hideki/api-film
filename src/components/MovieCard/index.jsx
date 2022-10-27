@@ -10,9 +10,11 @@ export const MovieCard = ({movie, showLink = true}) => {
             <img src={imageUrl + movie.poster_path} alt={movie.title}/>
                     
             <h2>{movie.title}</h2>
-            <p><FaStar/> {movie.vote_average}</p>
+            <div><FaStar/>  {movie.vote_average}</div>
             {showLink&& 
-                <Link to={`/movie/${movie.id}`} >Detalhes</Link>
+                <Link to={`/movie/${movie.id}`}>
+                    <button> Detalhes </button>
+                </Link>
             }
         </Container>
     );

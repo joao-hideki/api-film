@@ -2,16 +2,24 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;   
     padding: 1rem 2rem;
     background-color: #121212;
-
+    
     h2, a {        
         display: flex;
         align-items: center;
         gap: 0.5rem; 
-        font-size: 2rem;       
+        font-size: 2rem; 
+        
+        span{
+            @media (max-width: 760px) {
+                display: none;
+            }
+        }
+     
     }
 
     form {
