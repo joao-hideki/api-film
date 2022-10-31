@@ -13,7 +13,13 @@ export const MovieCard = ({movie, showLink = true}) => {
             <div><FaStar/>  {movie.vote_average}</div>
             {showLink&& 
                 <Link to={`/movie/${movie.id}`}>
-                    <button> Detalhes </button>
+                    <button onClick={() => {
+                         window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: 'smooth'
+                        })
+                    }}> Detalhes </button>
                 </Link>
             }
         </Container>
